@@ -12,10 +12,10 @@ class Shooter{
     display(){
         
         var pos = this.body.position;
-        pop();
-        ellipseMode(CENTER);
-        fill("blue");
-        ellipse(pos.x,pos.y,this.radius);
         push();
+        ellipseMode(RADIUS);
+        fill("blue");
+        ellipse(pos.x,pos.y,this.radius,this.radius);
+        pop();
     }
 }
