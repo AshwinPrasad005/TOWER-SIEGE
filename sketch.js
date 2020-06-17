@@ -20,7 +20,7 @@ function setup() {
 
 	ground1 = new Ground(300,500,600,20);
 	shooter1 = new Shooter(100,450,25);
-	sling1 = new Sling(shooter1,100,400);
+	sling1 = new Sling(shooter1.body,{x:100,y:300});
 
 	//packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:1.5, isStatic:false});
 	//World.add(world, packageBody);
@@ -46,6 +46,20 @@ function draw() {
 
   drawSprites();
  
+}
+
+function mouseDragged(){
+	Matter.Body.setPosition(shooter1.body,{x:mouseX,y:mouseY});
+}
+
+function mouseReleased(){
+	sling1.fly();
+}
+
+function keyPressed(){
+	if(keyCode == 32){
+	sling1.attach(shooter1.body);
+	}
 }
 
 
