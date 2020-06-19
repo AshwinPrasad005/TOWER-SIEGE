@@ -12,7 +12,7 @@ class Sling{
 
     display(){
         strokeWeight(3);
-        stroke("white");
+        fill("white");
         if(this.sling.bodyA>100){
             var pointA = this.sling.bodyA.position;
             var pointB = this.pointB;
