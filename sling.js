@@ -11,8 +11,8 @@ class Sling{
     }
 
     display(){
-        strokeWeight(3);
-        fill("white");
+        strokeWeight(255);
+        stroke(80,80,80);
         if(this.sling.bodyA>100){
             var pointA = this.sling.bodyA.position;
             var pointB = this.pointB;
