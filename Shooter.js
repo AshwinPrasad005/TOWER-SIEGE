@@ -1,4 +1,4 @@
-class Shooter{
+class Shooter extends BaseClass {
     constructor(x,y,radius){
         super(x,y,options);
         this.body = Bodies.circle(x,y,radius,options);
