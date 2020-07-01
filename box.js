@@ -3,7 +3,7 @@ class Box extends BaseClass {
     super(x,y,width,height);
     }
     display(){
-        super.display();
         fill("green");
+        super.display();
     }
 }

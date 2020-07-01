@@ -1,19 +1,20 @@
-class Shooter extends BaseClass {
+class Shooter {
     constructor(x,y,radius){
-        var options = {
+        var options ={
             isStatic:false,
             density:0.3,
             friction:1.0
         }
-        super()
         this.body = Bodies.circle(x,y,radius,options);
         this.radius = radius;
         World.add(world,this.body);
     }
     display(){
-        super.display();
+        push();
+        var pos = this.body.position;
         ellipseMode(CENTER);
         fill("blue");
-        ellipse(this.body.position.x,this.body.position.y,this.radius,this.radius);
+        ellipse(pos.x,pos.y,this.radius,this.radius);
+        pop();
     }
 }

@@ -12,9 +12,9 @@ class BaseClass{
     }
     display(){
         var pos = this.body.position;
-        pop();
+        push();
         rectMode(CENTER);
         rect(pos.x,pos.y,this.width,this.height);
-        push();
+        pop();
     }
 }
