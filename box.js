@@ -1,7 +1,7 @@
 class Box extends BaseClass {
     constructor(x,y,width,height){
     super(x,y,width,height);
-    this.visibility = 255;
+    this.Visibility = 255;
     }
     display(){
         fill("green");
@@ -9,10 +9,10 @@ class Box extends BaseClass {
         super.display();
         }
         else{
-            World.remove(world, this.body);
+            World.remove(world,this.body);
             push();
-            this.visiblity = this.visiblity - 5;
-            tint(255,this.vsisiblity);
+            this.Visiblity = this.Visiblity - 5;
+            tint(255,this.Visiblity);
             rect(this.body.position.x, this.body.position.y,25,25);
             pop();
         }
