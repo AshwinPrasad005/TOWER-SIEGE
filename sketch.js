@@ -56,14 +56,15 @@ function setup() {
  	//World.add(world, ground);
 
 
-	Engine.run(engine);
+	// Engine.run(engine);
   
 }
 
 
 function draw() {
-  rectMode(CENTER);
   background(0);
+
+  Engine.update(engine);
   
   ground1.display();
   ground2.display();

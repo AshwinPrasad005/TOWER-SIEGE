@@ -1,6 +1,6 @@
 class Box extends BaseClass {
-    constructor(x,y,width,height){
-    super(x,y,width,height);
+    constructor(x,y,width,height,options){
+    super(x,y,width,height,options);
     this.image = loadImage("box.jpg");
     this.Visibility = 255;
     }
