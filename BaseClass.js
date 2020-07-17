@@ -18,7 +18,7 @@ class BaseClass{
         translate(pos.x,pos.y);
         rotate(angle);
         imageMode(CENTER);
-        image(this.image,pos.x,pos.y,this.width,this.height);
+        image(this.image,0,0,this.width,this.height);
         pop();
     }
 }
