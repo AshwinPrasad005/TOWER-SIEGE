@@ -18,7 +18,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	shooter1 = new Shooter(100,100,50,50);
+	shooter1 = new Shooter(300,300,50,50);
 	sling1 = new Sling(shooter1.body,{x:100,y:300});
 
 	ground1 = new Ground(300,500,600,20);
